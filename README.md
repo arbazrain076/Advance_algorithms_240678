@@ -10,7 +10,7 @@ experiment methodology, and delivery schedule.
 ## Current Progress
 
 - [x] Assignment requirements mapped to an implementation plan
-- [ ] Task 1 - Advanced Data Structures
+- [x] Task 1 - Advanced Data Structures
 - [ ] Task 2 - Graph Algorithms and Pathfinding
 - [ ] Task 3 - Algorithmic Strategies
 - [ ] Task 4 - NP-Hard Problem and Heuristics
@@ -22,3 +22,14 @@ experiment methodology, and delivery schedule.
 Commands will be added with each completed task. Python implementations target Python 3.11 or
 newer, while the concurrency task targets a C++17 compiler.
 
+## Task 1 Commands
+
+```powershell
+$env:PYTHONPATH='src'
+python -m unittest discover -s tests -p 'test_*.py' -v
+python experiments/task1_benchmark.py --trials 5
+python experiments/task1_figures.py
+```
+
+Task 1's design, complexity analysis, benchmark interpretation, limitations, and use-case decisions
+are documented in [reports/task1_analysis.md](reports/task1_analysis.md).
