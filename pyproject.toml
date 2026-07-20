@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "advanced-algorithms-240678"
+version = "0.1.0"
+description = "Reproducible implementations and experiments for advanced algorithms coursework"
+requires-python = ">=3.11"
+
+[project.optional-dependencies]
+experiments = [
+    "matplotlib>=3.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
