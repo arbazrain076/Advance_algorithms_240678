@@ -1,5 +1,12 @@
 """Algorithmic strategy implementations for Task 3."""
 
+from .exam_timetabling import (
+    Exam,
+    ExamTimetabler,
+    Placement,
+    Room,
+    TimetableResult,
+)
 from .weighted_jobs import (
     Job,
     ScheduleResult,
@@ -14,9 +21,14 @@ from .weighted_greedy import (
 )
 
 __all__ = [
+    "Exam",
+    "ExamTimetabler",
     "GreedyComparison",
     "Job",
+    "Placement",
+    "Room",
     "ScheduleResult",
+    "TimetableResult",
     "compare_greedy",
     "exhaustive_weighted_schedule",
     "find_counterexample",
