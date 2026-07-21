@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="1164" viewBox="0 0 980 1164" role="img" aria-labelledby="title desc">
+<title id="title">Bellman-Ford negative-cycle trace</title>
+<desc id="desc">A reachable negative cycle keeps lowering distances after V - 1 passes</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="38" font-family="Arial" font-size="24" font-weight="700" fill="#222">Bellman-Ford negative-cycle trace</text>
+<text x="65" y="64" font-family="Arial" font-size="14" fill="#555">A reachable negative cycle keeps lowering distances after V - 1 passes</text>
+<line x1="90" y1="96" x2="90" y2="1129" stroke="#D55E00" stroke-width="4"/>
+<circle cx="90" cy="96" r="16" fill="#D55E00"/>
+<text x="90" y="101" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">1</text>
+<text x="125" y="94" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 1: relax S to A</text>
+<text x="125" y="116" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="73" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="96" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 1</text>
+<circle cx="90" cy="154" r="16" fill="#D55E00"/>
+<text x="90" y="159" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">2</text>
+<text x="125" y="152" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 1: relax A to B</text>
+<text x="125" y="174" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="131" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="154" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 2</text>
+<circle cx="90" cy="212" r="16" fill="#D55E00"/>
+<text x="90" y="217" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">3</text>
+<text x="125" y="210" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 1: relax B to C</text>
+<text x="125" y="232" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="189" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="212" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -2</text>
+<circle cx="90" cy="270" r="16" fill="#D55E00"/>
+<text x="90" y="275" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">4</text>
+<text x="125" y="268" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 1: relax C to A</text>
+<text x="125" y="290" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="247" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -1</text>
+<circle cx="90" cy="328" r="16" fill="#D55E00"/>
+<text x="90" y="333" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">5</text>
+<text x="125" y="326" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 1: relax C to D</text>
+<text x="125" y="348" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="305" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 0</text>
+<circle cx="90" cy="386" r="16" fill="#D55E00"/>
+<text x="90" y="391" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">6</text>
+<text x="125" y="384" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 2: relax A to B</text>
+<text x="125" y="406" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="363" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="386" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 0</text>
+<circle cx="90" cy="444" r="16" fill="#D55E00"/>
+<text x="90" y="449" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">7</text>
+<text x="125" y="442" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 2: relax B to C</text>
+<text x="125" y="464" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="421" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="444" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -4</text>
+<circle cx="90" cy="502" r="16" fill="#D55E00"/>
+<text x="90" y="507" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">8</text>
+<text x="125" y="500" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 2: relax C to A</text>
+<text x="125" y="522" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="479" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="502" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -3</text>
+<circle cx="90" cy="560" r="16" fill="#D55E00"/>
+<text x="90" y="565" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">9</text>
+<text x="125" y="558" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 2: relax C to D</text>
+<text x="125" y="580" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="537" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="560" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -2</text>
+<circle cx="90" cy="618" r="16" fill="#D55E00"/>
+<text x="90" y="623" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">10</text>
+<text x="125" y="616" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 3: relax A to B</text>
+<text x="125" y="638" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="595" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="618" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -2</text>
+<circle cx="90" cy="676" r="16" fill="#D55E00"/>
+<text x="90" y="681" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">11</text>
+<text x="125" y="674" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 3: relax B to C</text>
+<text x="125" y="696" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="653" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="676" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -6</text>
+<circle cx="90" cy="734" r="16" fill="#D55E00"/>
+<text x="90" y="739" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">12</text>
+<text x="125" y="732" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 3: relax C to A</text>
+<text x="125" y="754" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="711" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="734" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -5</text>
+<circle cx="90" cy="792" r="16" fill="#D55E00"/>
+<text x="90" y="797" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">13</text>
+<text x="125" y="790" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 3: relax C to D</text>
+<text x="125" y="812" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="769" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="792" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -4</text>
+<circle cx="90" cy="850" r="16" fill="#D55E00"/>
+<text x="90" y="855" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">14</text>
+<text x="125" y="848" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 4: relax A to B</text>
+<text x="125" y="870" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="827" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="850" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -4</text>
+<circle cx="90" cy="908" r="16" fill="#D55E00"/>
+<text x="90" y="913" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">15</text>
+<text x="125" y="906" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 4: relax B to C</text>
+<text x="125" y="928" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="885" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="908" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -8</text>
+<circle cx="90" cy="966" r="16" fill="#D55E00"/>
+<text x="90" y="971" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">16</text>
+<text x="125" y="964" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 4: relax C to A</text>
+<text x="125" y="986" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="943" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="966" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -7</text>
+<circle cx="90" cy="1024" r="16" fill="#D55E00"/>
+<text x="90" y="1029" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">17</text>
+<text x="125" y="1022" font-family="Arial" font-size="16" font-weight="700" fill="#222">Pass 4: relax C to D</text>
+<text x="125" y="1044" font-family="Arial" font-size="14" fill="#555">A lower distance was discovered</text>
+<rect x="735" y="1001" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="1024" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = -6</text>
+<circle cx="90" cy="1082" r="16" fill="#D55E00"/>
+<text x="90" y="1087" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">18</text>
+<text x="125" y="1080" font-family="Arial" font-size="16" font-weight="700" fill="#222">Extra relaxation remains possible</text>
+<text x="125" y="1102" font-family="Arial" font-size="14" fill="#555">Cycle witness: C -&gt; A -&gt; B -&gt; C</text>
+<rect x="735" y="1059" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="1082" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">affected = 4</text>
+</svg>

@@ -11,7 +11,7 @@ experiment methodology, and delivery schedule.
 
 - [x] Assignment requirements mapped to an implementation plan
 - [x] Task 1 - Advanced Data Structures
-- [ ] Task 2 - Graph Algorithms and Pathfinding
+- [x] Task 2 - Graph Algorithms and Pathfinding
 - [ ] Task 3 - Algorithmic Strategies
 - [ ] Task 4 - NP-Hard Problem and Heuristics
 - [ ] Task 5 - Concurrent Programming
@@ -33,3 +33,15 @@ python experiments/task1_figures.py
 
 Task 1's design, complexity analysis, benchmark interpretation, limitations, and use-case decisions
 are documented in [reports/task1_analysis.md](reports/task1_analysis.md).
+
+## Task 2 Commands
+
+```powershell
+$env:PYTHONPATH='src'
+python -m unittest discover -s tests -p 'test_*.py' -v
+python experiments/task2_benchmark.py --trials 5
+python experiments/task2_figures.py
+```
+
+Task 2's graph-model justification, algorithm traces, runtime comparison, constant-factor discussion,
+and limitations are documented in [reports/task2_analysis.md](reports/task2_analysis.md).

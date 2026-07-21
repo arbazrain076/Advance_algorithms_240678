@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="584" viewBox="0 0 980 584" role="img" aria-labelledby="title desc">
+<title id="title">Dijkstra execution trace</title>
+<desc id="desc">Directed transport network from KTM; only successful relaxations are shown</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="65" y="38" font-family="Arial" font-size="24" font-weight="700" fill="#222">Dijkstra execution trace</text>
+<text x="65" y="64" font-family="Arial" font-size="14" fill="#555">Directed transport network from KTM; only successful relaxations are shown</text>
+<line x1="90" y1="96" x2="90" y2="549" stroke="#0072B2" stroke-width="4"/>
+<circle cx="90" cy="96" r="16" fill="#0072B2"/>
+<text x="90" y="101" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">1</text>
+<text x="125" y="94" font-family="Arial" font-size="16" font-weight="700" fill="#222">Settle KTM</text>
+<text x="125" y="116" font-family="Arial" font-size="14" fill="#555">Shortest distance is now final</text>
+<rect x="735" y="73" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="96" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">distance = 0</text>
+<circle cx="90" cy="154" r="16" fill="#0072B2"/>
+<text x="90" y="159" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">2</text>
+<text x="125" y="152" font-family="Arial" font-size="16" font-weight="700" fill="#222">Relax KTM to BKT</text>
+<text x="125" y="174" font-family="Arial" font-size="14" fill="#555">Improve tentative distance from infinity</text>
+<rect x="735" y="131" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="154" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 12</text>
+<circle cx="90" cy="212" r="16" fill="#0072B2"/>
+<text x="90" y="217" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">3</text>
+<text x="125" y="210" font-family="Arial" font-size="16" font-weight="700" fill="#222">Relax KTM to PKR</text>
+<text x="125" y="232" font-family="Arial" font-size="14" fill="#555">Improve tentative distance from infinity</text>
+<rect x="735" y="189" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="212" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 200</text>
+<circle cx="90" cy="270" r="16" fill="#0072B2"/>
+<text x="90" y="275" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">4</text>
+<text x="125" y="268" font-family="Arial" font-size="16" font-weight="700" fill="#222">Settle BKT</text>
+<text x="125" y="290" font-family="Arial" font-size="14" fill="#555">Shortest distance is now final</text>
+<rect x="735" y="247" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="270" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">distance = 12</text>
+<circle cx="90" cy="328" r="16" fill="#0072B2"/>
+<text x="90" y="333" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">5</text>
+<text x="125" y="326" font-family="Arial" font-size="16" font-weight="700" fill="#222">Relax BKT to DHK</text>
+<text x="125" y="348" font-family="Arial" font-size="14" fill="#555">Improve tentative distance from infinity</text>
+<rect x="735" y="305" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="328" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 30</text>
+<circle cx="90" cy="386" r="16" fill="#0072B2"/>
+<text x="90" y="391" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">6</text>
+<text x="125" y="384" font-family="Arial" font-size="16" font-weight="700" fill="#222">Settle DHK</text>
+<text x="125" y="406" font-family="Arial" font-size="14" fill="#555">Shortest distance is now final</text>
+<rect x="735" y="363" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="386" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">distance = 30</text>
+<circle cx="90" cy="444" r="16" fill="#0072B2"/>
+<text x="90" y="449" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">7</text>
+<text x="125" y="442" font-family="Arial" font-size="16" font-weight="700" fill="#222">Relax DHK to PKR</text>
+<text x="125" y="464" font-family="Arial" font-size="14" fill="#555">Improve tentative distance from 200</text>
+<rect x="735" y="421" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="444" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">new = 175</text>
+<circle cx="90" cy="502" r="16" fill="#0072B2"/>
+<text x="90" y="507" text-anchor="middle" font-family="Arial" font-size="13" font-weight="700" fill="#fff">8</text>
+<text x="125" y="500" font-family="Arial" font-size="16" font-weight="700" fill="#222">Settle PKR</text>
+<text x="125" y="522" font-family="Arial" font-size="14" fill="#555">Shortest distance is now final</text>
+<rect x="735" y="479" width="190" height="36" rx="8" fill="#f3f5f7"/>
+<text x="830" y="502" text-anchor="middle" font-family="Arial" font-size="14" fill="#222">distance = 175</text>
+</svg>
