@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="486" viewBox="0 0 800 486" role="img" aria-labelledby="title desc">
+<title id="title">Task 4: local-search resource utilisation</title>
+<desc id="desc">Resource share in every bin for the 12-item trial-one solution.</desc>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="85" y="38" font-family="Arial" font-size="24" font-weight="700">Task 4: local-search resource utilisation</text>
+<text x="85" y="64" font-family="Arial" font-size="14" fill="#555">12-item trial 1; darker cells represent fuller resource dimensions</text>
+<text x="250" y="102" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700">CPU</text>
+<text x="410" y="102" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700">RAM</text>
+<text x="570" y="102" text-anchor="middle" font-family="Arial" font-size="14" font-weight="700">Bandwidth</text>
+<text x="155" y="147" text-anchor="end" font-family="Arial" font-size="14">Bin 1 (2 items)</text>
+<rect x="175" y="118" width="150" height="42" rx="6" fill="rgb(192,192,255)" stroke="#777"/>
+<text x="250" y="144" text-anchor="middle" font-family="Arial" font-size="14">36%</text>
+<rect x="335" y="118" width="150" height="42" rx="6" fill="rgb(152,152,255)" stroke="#777"/>
+<text x="410" y="144" text-anchor="middle" font-family="Arial" font-size="14">64%</text>
+<rect x="495" y="118" width="150" height="42" rx="6" fill="rgb(120,120,255)" stroke="#777"/>
+<text x="570" y="144" text-anchor="middle" font-family="Arial" font-size="14">86%</text>
+<text x="155" y="203" text-anchor="end" font-family="Arial" font-size="14">Bin 2 (2 items)</text>
+<rect x="175" y="174" width="150" height="42" rx="6" fill="rgb(130,130,255)" stroke="#777"/>
+<text x="250" y="200" text-anchor="middle" font-family="Arial" font-size="14">79%</text>
+<rect x="335" y="174" width="150" height="42" rx="6" fill="rgb(117,117,255)" stroke="#777"/>
+<text x="410" y="200" text-anchor="middle" font-family="Arial" font-size="14">88%</text>
+<rect x="495" y="174" width="150" height="42" rx="6" fill="rgb(130,130,255)" stroke="#777"/>
+<text x="570" y="200" text-anchor="middle" font-family="Arial" font-size="14">79%</text>
+<text x="155" y="259" text-anchor="end" font-family="Arial" font-size="14">Bin 3 (2 items)</text>
+<rect x="175" y="230" width="150" height="42" rx="6" fill="rgb(137,137,255)" stroke="#777"/>
+<text x="250" y="256" text-anchor="middle" font-family="Arial" font-size="14">74%</text>
+<rect x="335" y="230" width="150" height="42" rx="6" fill="rgb(144,144,255)" stroke="#777"/>
+<text x="410" y="256" text-anchor="middle" font-family="Arial" font-size="14">69%</text>
+<rect x="495" y="230" width="150" height="42" rx="6" fill="rgb(120,120,255)" stroke="#777"/>
+<text x="570" y="256" text-anchor="middle" font-family="Arial" font-size="14">86%</text>
+<text x="155" y="315" text-anchor="end" font-family="Arial" font-size="14">Bin 4 (2 items)</text>
+<rect x="175" y="286" width="150" height="42" rx="6" fill="rgb(147,147,255)" stroke="#777"/>
+<text x="250" y="312" text-anchor="middle" font-family="Arial" font-size="14">67%</text>
+<rect x="335" y="286" width="150" height="42" rx="6" fill="rgb(139,139,255)" stroke="#777"/>
+<text x="410" y="312" text-anchor="middle" font-family="Arial" font-size="14">73%</text>
+<rect x="495" y="286" width="150" height="42" rx="6" fill="rgb(118,118,255)" stroke="#777"/>
+<text x="570" y="312" text-anchor="middle" font-family="Arial" font-size="14">87%</text>
+<text x="155" y="371" text-anchor="end" font-family="Arial" font-size="14">Bin 5 (2 items)</text>
+<rect x="175" y="342" width="150" height="42" rx="6" fill="rgb(129,129,255)" stroke="#777"/>
+<text x="250" y="368" text-anchor="middle" font-family="Arial" font-size="14">80%</text>
+<rect x="335" y="342" width="150" height="42" rx="6" fill="rgb(143,143,255)" stroke="#777"/>
+<text x="410" y="368" text-anchor="middle" font-family="Arial" font-size="14">70%</text>
+<rect x="495" y="342" width="150" height="42" rx="6" fill="rgb(105,105,255)" stroke="#777"/>
+<text x="570" y="368" text-anchor="middle" font-family="Arial" font-size="14">96%</text>
+<text x="155" y="427" text-anchor="end" font-family="Arial" font-size="14">Bin 6 (2 items)</text>
+<rect x="175" y="398" width="150" height="42" rx="6" fill="rgb(134,134,255)" stroke="#777"/>
+<text x="250" y="424" text-anchor="middle" font-family="Arial" font-size="14">76%</text>
+<rect x="335" y="398" width="150" height="42" rx="6" fill="rgb(121,121,255)" stroke="#777"/>
+<text x="410" y="424" text-anchor="middle" font-family="Arial" font-size="14">85%</text>
+<rect x="495" y="398" width="150" height="42" rx="6" fill="rgb(126,126,255)" stroke="#777"/>
+<text x="570" y="424" text-anchor="middle" font-family="Arial" font-size="14">82%</text>
+</svg>
