@@ -12,7 +12,7 @@ experiment methodology, and delivery schedule.
 - [x] Assignment requirements mapped to an implementation plan
 - [x] Task 1 - Advanced Data Structures
 - [x] Task 2 - Graph Algorithms and Pathfinding
-- [ ] Task 3 - Algorithmic Strategies
+- [x] Task 3 - Algorithmic Strategies
 - [ ] Task 4 - NP-Hard Problem and Heuristics
 - [ ] Task 5 - Concurrent Programming
 - [ ] Integrated analysis and final reproducibility audit
@@ -45,3 +45,15 @@ python experiments/task2_figures.py
 
 Task 2's graph-model justification, algorithm traces, runtime comparison, constant-factor discussion,
 and limitations are documented in [reports/task2_analysis.md](reports/task2_analysis.md).
+
+## Task 3 Commands
+
+```powershell
+$env:PYTHONPATH='src'
+python -m unittest discover -s tests -p 'test_*.py' -v
+python experiments/task3_experiments.py --trials 5
+python experiments/task3_figures.py
+```
+
+Task 3's recurrence, greedy proof and counterexamples, pruning strategy, empirical comparison, and
+limitations are documented in [reports/task3_analysis.md](reports/task3_analysis.md).

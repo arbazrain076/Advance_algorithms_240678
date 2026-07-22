@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="570" viewBox="0 0 920 570" role="img" aria-labelledby="title desc">
+<title id="title">Task 3: weighted greedy optimality gaps</title>
+<desc id="desc">Five deterministic instances per size; median exact-profit minus greedy-profit</desc>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="100" y="38" font-family="Arial" font-size="24" font-weight="700" fill="#222">Task 3: weighted greedy optimality gaps</text>
+<text x="100" y="64" font-family="Arial" font-size="14" fill="#555">Five deterministic instances per size; median exact-profit minus greedy-profit</text>
+<line x1="100" y1="480.0" x2="885" y2="480.0" stroke="#dddddd"/>
+<text x="88" y="485.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">0</text>
+<line x1="100" y1="402.0" x2="885" y2="402.0" stroke="#dddddd"/>
+<text x="88" y="407.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">60</text>
+<line x1="100" y1="324.0" x2="885" y2="324.0" stroke="#dddddd"/>
+<text x="88" y="329.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">121</text>
+<line x1="100" y1="246.0" x2="885" y2="246.0" stroke="#dddddd"/>
+<text x="88" y="251.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">181</text>
+<line x1="100" y1="168.0" x2="885" y2="168.0" stroke="#dddddd"/>
+<text x="88" y="173.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">241</text>
+<line x1="100" y1="90.0" x2="885" y2="90.0" stroke="#dddddd"/>
+<text x="88" y="95.0" text-anchor="end" font-family="Arial" font-size="13" fill="#444">301</text>
+<text x="100.0" y="508" text-anchor="middle" font-family="Arial" font-size="14">10</text>
+<text x="492.5" y="508" text-anchor="middle" font-family="Arial" font-size="14">25</text>
+<text x="885.0" y="508" text-anchor="middle" font-family="Arial" font-size="14">50</text>
+<polyline points="100.0,411.4 492.5,287.2 885.0,288.5" fill="none" stroke="#0072B2" stroke-width="3"/>
+<circle cx="100.0" cy="411.4" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<circle cx="492.5" cy="287.2" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="288.5" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<line x1="100" y1="546" x2="128" y2="546" stroke="#0072B2" stroke-width="4"/>
+<text x="136" y="551" font-family="Arial" font-size="13">earliest_finish</text>
+<polyline points="100.0,445.1 492.5,288.5 885.0,125.5" fill="none" stroke="#D55E00" stroke-width="3"/>
+<circle cx="100.0" cy="445.1" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<circle cx="492.5" cy="288.5" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="125.5" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<line x1="335" y1="546" x2="363" y2="546" stroke="#D55E00" stroke-width="4"/>
+<text x="371" y="551" font-family="Arial" font-size="13">shortest_duration</text>
+<polyline points="100.0,480.0 492.5,480.0 885.0,425.7" fill="none" stroke="#009E73" stroke-width="3"/>
+<circle cx="100.0" cy="480.0" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<circle cx="492.5" cy="480.0" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="425.7" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<line x1="570" y1="546" x2="598" y2="546" stroke="#009E73" stroke-width="4"/>
+<text x="606" y="551" font-family="Arial" font-size="13">highest_weight</text>
+<text x="492.5" y="518" text-anchor="middle" font-family="Arial" font-size="15">Problem size</text>
+<text transform="translate(23 285.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="15">Median optimality gap</text>
+</svg>
