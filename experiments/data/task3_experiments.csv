@@ -1,0 +1,126 @@
+experiment,method,size,trial,total_ns,objective,optimality_gap,nodes_visited,backtracks,forward_prunes
+weighted_jobs,Dynamic programming,5,1,22300,232.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,5,1,45000,232,0.0,0,0,0
+weighted_jobs,Dynamic programming,5,2,11500,219.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,5,2,36700,219,0.0,0,0,0
+weighted_jobs,Dynamic programming,5,3,10000,332.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,5,3,52400,332,0.0,0,0,0
+weighted_jobs,Dynamic programming,5,4,9300,183.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,5,4,76800,183,0.0,0,0,0
+weighted_jobs,Dynamic programming,5,5,11800,97.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,5,5,35700,97,0.0,0,0,0
+weighted_jobs,Dynamic programming,10,1,19400,444.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,10,1,1300400,444,0.0,0,0,0
+weighted_jobs,Dynamic programming,10,2,15900,419.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,10,2,1760400,419,0.0,0,0,0
+weighted_jobs,Dynamic programming,10,3,19200,349.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,10,3,1273100,349,0.0,0,0,0
+weighted_jobs,Dynamic programming,10,4,16900,449.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,10,4,1333800,449,0.0,0,0,0
+weighted_jobs,Dynamic programming,10,5,17100,452.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,10,5,1280600,452,0.0,0,0,0
+weighted_jobs,Dynamic programming,14,1,21100,343.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,14,1,23271900,343,0.0,0,0,0
+weighted_jobs,Dynamic programming,14,2,26400,540.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,14,2,23072400,540,0.0,0,0,0
+weighted_jobs,Dynamic programming,14,3,27200,405.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,14,3,22748200,405,0.0,0,0,0
+weighted_jobs,Dynamic programming,14,4,23400,464.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,14,4,22759800,464,0.0,0,0,0
+weighted_jobs,Dynamic programming,14,5,21600,489.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,14,5,23621700,489,0.0,0,0,0
+weighted_jobs,Dynamic programming,16,1,24400,625.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,16,1,101334500,625,0.0,0,0,0
+weighted_jobs,Dynamic programming,16,2,32000,677.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,16,2,102034800,677,0.0,0,0,0
+weighted_jobs,Dynamic programming,16,3,33100,641.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,16,3,97312900,641,0.0,0,0,0
+weighted_jobs,Dynamic programming,16,4,30600,468.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,16,4,101178000,468,0.0,0,0,0
+weighted_jobs,Dynamic programming,16,5,30300,799.0,0.0,0,0,0
+weighted_jobs,Exhaustive search,16,5,99363700,799,0.0,0,0,0
+weighted_greedy,earliest_finish,10,1,15300,316,53.0,0,0,0
+weighted_greedy,shortest_duration,10,1,9300,316,53.0,0,0,0
+weighted_greedy,highest_weight,10,1,7400,369,0.0,0,0,0
+weighted_greedy,earliest_finish,10,2,7700,327,72.0,0,0,0
+weighted_greedy,shortest_duration,10,2,7200,320,79.0,0,0,0
+weighted_greedy,highest_weight,10,2,6700,399,0.0,0,0,0
+weighted_greedy,earliest_finish,10,3,7400,456,55.0,0,0,0
+weighted_greedy,shortest_duration,10,3,6900,502,9.0,0,0,0
+weighted_greedy,highest_weight,10,3,6300,511,0.0,0,0,0
+weighted_greedy,earliest_finish,10,4,6700,344,0.0,0,0,0
+weighted_greedy,shortest_duration,10,4,6400,317,27.0,0,0,0
+weighted_greedy,highest_weight,10,4,6300,344,0.0,0,0,0
+weighted_greedy,earliest_finish,10,5,7000,399,0.0,0,0,0
+weighted_greedy,shortest_duration,10,5,6900,399,0.0,0,0,0
+weighted_greedy,highest_weight,10,5,6300,399,0.0,0,0,0
+weighted_greedy,earliest_finish,25,1,16900,448,149.0,0,0,0
+weighted_greedy,shortest_duration,25,1,16200,437,160.0,0,0,0
+weighted_greedy,highest_weight,25,1,14800,597,0.0,0,0,0
+weighted_greedy,earliest_finish,25,2,16900,360,164.0,0,0,0
+weighted_greedy,shortest_duration,25,2,16000,474,50.0,0,0,0
+weighted_greedy,highest_weight,25,2,14800,495,29.0,0,0,0
+weighted_greedy,earliest_finish,25,3,18600,530,157.0,0,0,0
+weighted_greedy,shortest_duration,25,3,17900,527,160.0,0,0,0
+weighted_greedy,highest_weight,25,3,15400,645,42.0,0,0,0
+weighted_greedy,earliest_finish,25,4,17800,506,127.0,0,0,0
+weighted_greedy,shortest_duration,25,4,24500,582,51.0,0,0,0
+weighted_greedy,highest_weight,25,4,16200,633,0.0,0,0,0
+weighted_greedy,earliest_finish,25,5,16800,668,141.0,0,0,0
+weighted_greedy,shortest_duration,25,5,16700,661,148.0,0,0,0
+weighted_greedy,highest_weight,25,5,17300,809,0.0,0,0,0
+weighted_greedy,earliest_finish,50,1,39400,664,326.0,0,0,0
+weighted_greedy,shortest_duration,50,1,38400,664,326.0,0,0,0
+weighted_greedy,highest_weight,50,1,32900,902,88.0,0,0,0
+weighted_greedy,earliest_finish,50,2,40600,1083,82.0,0,0,0
+weighted_greedy,shortest_duration,50,2,39400,1091,74.0,0,0,0
+weighted_greedy,highest_weight,50,2,35600,1123,42.0,0,0,0
+weighted_greedy,earliest_finish,50,3,42300,1131,56.0,0,0,0
+weighted_greedy,shortest_duration,50,3,39900,1024,163.0,0,0,0
+weighted_greedy,highest_weight,50,3,32700,981,206.0,0,0,0
+weighted_greedy,earliest_finish,50,4,37900,1007,216.0,0,0,0
+weighted_greedy,shortest_duration,50,4,37100,927,296.0,0,0,0
+weighted_greedy,highest_weight,50,4,32300,1205,18.0,0,0,0
+weighted_greedy,earliest_finish,50,5,38000,809,148.0,0,0,0
+weighted_greedy,shortest_duration,50,5,34300,683,274.0,0,0,0
+weighted_greedy,highest_weight,50,5,30700,939,18.0,0,0,0
+exam_timetabling,Baseline,5,1,188500,0.0,0.0,64,64,0
+exam_timetabling,Pruned,5,1,84900,0.0,0.0,4,4,1
+exam_timetabling,Baseline,5,2,161000,0.0,0.0,64,64,0
+exam_timetabling,Pruned,5,2,76300,0.0,0.0,4,4,1
+exam_timetabling,Baseline,5,3,158600,0.0,0.0,64,64,0
+exam_timetabling,Pruned,5,3,65700,0.0,0.0,4,4,1
+exam_timetabling,Baseline,5,4,157800,0.0,0.0,64,64,0
+exam_timetabling,Pruned,5,4,64900,0.0,0.0,4,4,1
+exam_timetabling,Baseline,5,5,169900,0.0,0.0,64,64,0
+exam_timetabling,Pruned,5,5,70800,0.0,0.0,4,4,1
+exam_timetabling,Baseline,6,1,898700,0.0,0.0,325,325,0
+exam_timetabling,Pruned,6,1,117000,0.0,0.0,5,5,1
+exam_timetabling,Baseline,6,2,876800,0.0,0.0,325,325,0
+exam_timetabling,Pruned,6,2,116000,0.0,0.0,5,5,1
+exam_timetabling,Baseline,6,3,871400,0.0,0.0,325,325,0
+exam_timetabling,Pruned,6,3,112700,0.0,0.0,5,5,1
+exam_timetabling,Baseline,6,4,875200,0.0,0.0,325,325,0
+exam_timetabling,Pruned,6,4,108800,0.0,0.0,5,5,1
+exam_timetabling,Baseline,6,5,877800,0.0,0.0,325,325,0
+exam_timetabling,Pruned,6,5,344500,0.0,0.0,5,5,1
+exam_timetabling,Baseline,7,1,5989300,0.0,0.0,1956,1956,0
+exam_timetabling,Pruned,7,1,191700,0.0,0.0,6,6,1
+exam_timetabling,Baseline,7,2,5720200,0.0,0.0,1956,1956,0
+exam_timetabling,Pruned,7,2,197700,0.0,0.0,6,6,1
+exam_timetabling,Baseline,7,3,5965600,0.0,0.0,1956,1956,0
+exam_timetabling,Pruned,7,3,183600,0.0,0.0,6,6,1
+exam_timetabling,Baseline,7,4,5930300,0.0,0.0,1956,1956,0
+exam_timetabling,Pruned,7,4,179700,0.0,0.0,6,6,1
+exam_timetabling,Baseline,7,5,5926000,0.0,0.0,1956,1956,0
+exam_timetabling,Pruned,7,5,179900,0.0,0.0,6,6,1
+exam_timetabling,Baseline,8,1,44917000,0.0,0.0,13699,13699,0
+exam_timetabling,Pruned,8,1,271300,0.0,0.0,7,7,1
+exam_timetabling,Baseline,8,2,45780500,0.0,0.0,13699,13699,0
+exam_timetabling,Pruned,8,2,282000,0.0,0.0,7,7,1
+exam_timetabling,Baseline,8,3,44052200,0.0,0.0,13699,13699,0
+exam_timetabling,Pruned,8,3,279400,0.0,0.0,7,7,1
+exam_timetabling,Baseline,8,4,44178400,0.0,0.0,13699,13699,0
+exam_timetabling,Pruned,8,4,269500,0.0,0.0,7,7,1
+exam_timetabling,Baseline,8,5,45578400,0.0,0.0,13699,13699,0
+exam_timetabling,Pruned,8,5,252400,0.0,0.0,7,7,1
