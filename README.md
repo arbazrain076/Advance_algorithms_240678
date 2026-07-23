@@ -15,7 +15,7 @@ experiment methodology, and delivery schedule.
 - [x] Task 3 - Algorithmic Strategies
 - [x] Task 4 - NP-Hard Problem and Heuristics
 - [x] Task 5 - Concurrent Programming
-- [ ] Integrated analysis and final reproducibility audit
+- [x] Integrated analysis and final reproducibility audit
 
 ## Quick Start
 
@@ -80,3 +80,15 @@ python experiments/task5_figures.py
 
 Task 5's critical sections, synchronisation strategy, correctness checks, speedup, efficiency, and
 scalability limits are documented in [reports/task5_analysis.md](reports/task5_analysis.md).
+
+## Integrated Submission
+
+The word-count-conscious submission report is available at
+[reports/final_report.md](reports/final_report.md). The individual task reports provide supporting
+technical detail and additional figures.
+
+Run the repository-wide audit with:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File run_all_checks.ps1
+```
