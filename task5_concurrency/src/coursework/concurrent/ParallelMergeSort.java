@@ -62,25 +62,30 @@ public final class ParallelMergeSort {
 
         for (long width = 1; width < output.length; width *= 2) {
             int runWidth = (int) width;
-            for (int left = 0; left < output.length; left += 2 * runWidth) {
-                int middle = Math.min(left + runWidth, output.length);
-                int right = Math.min(left + 2 * runWidth, output.length);
-                int taskLeft = left;
-                long[] taskSource = source;
-                long[] taskDestination = destination;
-                Runnable merge = () -> merge(
-                        taskSource,
-                        taskDestination,
-                        taskLeft,
-                        middle,
-                        right);
-                if (workers == null) {
-                    merge.run();
-                } else {
-                    workers.submit(merge);
+            int mergeCount = (output.length + 2 * runWidth - 1) / (2 * runWidth);
+            if (workers == null) {
+                for (int mergeIndex = 0; mergeIndex < mergeCount; mergeIndex++) {
+                    mergeAtIndex(source, destination, output.length, runWidth, mergeIndex);
                 }
-            }
-            if (workers != null) {
+            } else {
+                int taskCount = Math.min(workers.workerCount(), mergeCount);
+                for (int taskIndex = 0; taskIndex < taskCount; taskIndex++) {
+                    int firstMerge = taskIndex;
+                    long[] taskSource = source;
+                    long[] taskDestination = destination;
+                    workers.submit(() -> {
+                        for (int mergeIndex = firstMerge;
+                                mergeIndex < mergeCount;
+                                mergeIndex += taskCount) {
+                            mergeAtIndex(
+                                    taskSource,
+                                    taskDestination,
+                                    output.length,
+                                    runWidth,
+                                    mergeIndex);
+                        }
+                    });
+                }
                 workers.awaitCompletion();
             }
             long[] temporary = source;
@@ -93,6 +98,18 @@ public final class ParallelMergeSort {
             }
         }
         System.arraycopy(source, 0, output, 0, output.length);
+    }
+
+    private static void mergeAtIndex(
+            long[] source,
+            long[] destination,
+            int length,
+            int runWidth,
+            int mergeIndex) {
+        int left = mergeIndex * 2 * runWidth;
+        int middle = Math.min(left + runWidth, length);
+        int right = Math.min(left + 2 * runWidth, length);
+        merge(source, destination, left, middle, right);
     }
 
     private static void merge(
@@ -143,6 +160,10 @@ public final class ParallelMergeSort {
                 workers[index] = new Thread(this::workerLoop, "merge-worker-" + index);
                 workers[index].start();
             }
+        }
+
+        int workerCount() {
+            return workers.length;
         }
 
         void submit(Runnable task) {
