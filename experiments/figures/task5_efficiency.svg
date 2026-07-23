@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="570" viewBox="0 0 920 570" role="img" aria-labelledby="title desc">
+<title id="title">Task 5: parallel efficiency</title>
+<desc id="desc">Efficiency = speedup / worker count; values above 1 reflect measurement variation</desc>
+<rect width="100%" height="100%" fill="#fff"/>
+<text x="100" y="38" font-family="Arial" font-size="24" font-weight="700">Task 5: parallel efficiency</text>
+<text x="100" y="64" font-family="Arial" font-size="14" fill="#555">Efficiency = speedup / worker count; values above 1 reflect measurement variation</text>
+<line x1="100" y1="480.0" x2="885" y2="480.0" stroke="#ddd"/>
+<text x="88" y="485.0" text-anchor="end" font-family="Arial" font-size="13">0.0</text>
+<line x1="100" y1="402.0" x2="885" y2="402.0" stroke="#ddd"/>
+<text x="88" y="407.0" text-anchor="end" font-family="Arial" font-size="13">0.2</text>
+<line x1="100" y1="324.0" x2="885" y2="324.0" stroke="#ddd"/>
+<text x="88" y="329.0" text-anchor="end" font-family="Arial" font-size="13">0.5</text>
+<line x1="100" y1="246.0" x2="885" y2="246.0" stroke="#ddd"/>
+<text x="88" y="251.0" text-anchor="end" font-family="Arial" font-size="13">0.7</text>
+<line x1="100" y1="168.0" x2="885" y2="168.0" stroke="#ddd"/>
+<text x="88" y="173.0" text-anchor="end" font-family="Arial" font-size="13">1.0</text>
+<line x1="100" y1="90.0" x2="885" y2="90.0" stroke="#ddd"/>
+<text x="88" y="95.0" text-anchor="end" font-family="Arial" font-size="13">1.2</text>
+<text x="100.0" y="508" text-anchor="middle" font-family="Arial" font-size="14">1</text>
+<text x="361.7" y="508" text-anchor="middle" font-family="Arial" font-size="14">2</text>
+<text x="623.3" y="508" text-anchor="middle" font-family="Arial" font-size="14">4</text>
+<text x="885.0" y="508" text-anchor="middle" font-family="Arial" font-size="14">8</text>
+<polyline points="100.0,177.2 361.7,261.9 623.3,339.6 885.0,409.3" fill="none" stroke="#0072B2" stroke-width="3"/>
+<circle cx="100.0" cy="177.2" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<circle cx="361.7" cy="261.9" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<circle cx="623.3" cy="339.6" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="409.3" r="5" fill="#0072B2" stroke="#fff" stroke-width="2"/>
+<line x1="100" y1="546" x2="128" y2="546" stroke="#0072B2" stroke-width="4"/>
+<text x="136" y="551" font-family="Arial" font-size="13">100 thousand</text>
+<polyline points="100.0,120.9 361.7,191.5 623.3,265.2 885.0,356.2" fill="none" stroke="#D55E00" stroke-width="3"/>
+<circle cx="100.0" cy="120.9" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<circle cx="361.7" cy="191.5" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<circle cx="623.3" cy="265.2" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="356.2" r="5" fill="#D55E00" stroke="#fff" stroke-width="2"/>
+<line x1="290" y1="546" x2="318" y2="546" stroke="#D55E00" stroke-width="4"/>
+<text x="326" y="551" font-family="Arial" font-size="13">500 thousand</text>
+<polyline points="100.0,147.3 361.7,191.7 623.3,254.3 885.0,338.3" fill="none" stroke="#009E73" stroke-width="3"/>
+<circle cx="100.0" cy="147.3" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<circle cx="361.7" cy="191.7" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<circle cx="623.3" cy="254.3" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<circle cx="885.0" cy="338.3" r="5" fill="#009E73" stroke="#fff" stroke-width="2"/>
+<line x1="480" y1="546" x2="508" y2="546" stroke="#009E73" stroke-width="4"/>
+<text x="516" y="551" font-family="Arial" font-size="13">2 million</text>
+<text x="492.5" y="518" text-anchor="middle" font-family="Arial" font-size="15">Worker threads</text>
+<text transform="translate(23 285.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="15">Parallel efficiency</text>
+</svg>
