@@ -16,26 +16,24 @@ without coupling it to another task.
    heuristics, and pruned backtracking for exam timetabling.
 4. **NP-hard optimisation:** multi-resource bin packing using greedy construction, local
    search, and an exact small-instance reference.
-5. **Concurrent programming:** sequential and synchronised parallel merge sort in Java.
+5. **Concurrent programming:** sequential and process-based parallel merge sort in Python.
 
 ## Technologies Used
 
 - Python 3.11 or newer
-- Java Development Kit 17 or newer
-- PowerShell 5.1 or newer for the Java helper scripts
-- Python standard library for algorithms, tests, benchmarks, CSV output, and SVG generation
+- Python standard library for algorithms, process-based concurrency, benchmarks, CSV output,
+  and SVG generation
+- pytest for the complete automated test suite
 
 ## Requirements
 
-The Python implementations have no third-party runtime dependency. The project metadata is
-defined in `pyproject.toml`. A JDK is required only for Task 5.
+The implementations have no third-party runtime dependency. The development extras in
+`pyproject.toml` install pytest for automated validation.
 
-Check the required tools:
+Check the required tool:
 
 ```powershell
 python --version
-javac -version
-java -version
 ```
 
 ## Installation
@@ -46,22 +44,22 @@ From the repository root:
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install --upgrade pip
-python -m pip install -e .
+python -m pip install -e ".[dev]"
 ```
 
 ## Running the Python Tests
 
-After installation, run all Task 1–4 tests:
+After installation, run all Task 1–5 tests:
 
 ```powershell
-python -m unittest discover -s tests -p "test_*.py" -v
+python -m pytest
 ```
 
 Without installing the package, set the source path for the current PowerShell session first:
 
 ```powershell
 $env:PYTHONPATH = "src"
-python -m unittest discover -s tests -p "test_*.py" -v
+python -m pytest
 ```
 
 ## Running the Benchmarks
@@ -74,6 +72,7 @@ python experiments/benchmark_scripts/task1_benchmark.py --trials 5
 python experiments/benchmark_scripts/task2_benchmark.py --trials 5
 python experiments/benchmark_scripts/task3_experiments.py --trials 5
 python experiments/benchmark_scripts/task4_experiments.py --trials 5
+python -m src.task5_concurrency.benchmark --trials 5
 ```
 
 Regenerate the SVG figures from the retained CSV files:
@@ -86,25 +85,30 @@ python experiments/benchmark_scripts/task4_figures.py
 python experiments/benchmark_scripts/task5_figures.py
 ```
 
-## Compiling and Running the Java Concurrency Task
+## Running the Task 5 Concurrency Benchmark
 
-The test helper compiles the Java source and test classes with warnings treated as errors, then
-runs the concurrency checks:
+Task 5 keeps merge sort as the algorithm and uses
+`concurrent.futures.ProcessPoolExecutor` with the Windows-safe `spawn` start method. Inputs below
+the configurable threshold are processed sequentially to avoid process-startup overhead. Larger
+inputs are divided into sorted runs and merged by worker processes. The benchmark module protects
+process creation with `if __name__ == "__main__":`; custom entry-point scripts must use the same
+guard on Windows.
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File task5_concurrency/run_tests.ps1
+python -m pytest tests/task5
 ```
 
-Run the Task 5 benchmark and write its CSV results to the shared benchmark-data directory:
+Run the complete benchmark for worker counts 1, 2, 4, and 8:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File task5_concurrency/run_benchmark.ps1 -Trials 5
+python -m src.task5_concurrency.benchmark --trials 5
 ```
 
-Use `-Quick` for a shorter benchmark validation:
+Use quick mode and a separate output file for a short validation that does not overwrite the
+retained evidence:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File task5_concurrency/run_benchmark.ps1 -Trials 1 -Quick -Output tmp/task5_validation.csv
+python -m src.task5_concurrency.benchmark --trials 1 --quick --threshold 512 --output tmp/task5_validation.csv
 ```
 
 ## Repository Structure
@@ -118,21 +122,19 @@ powershell -NoProfile -ExecutionPolicy Bypass -File task5_concurrency/run_benchm
 │   ├── task1_structures/
 │   ├── task2_graphs/
 │   ├── task3_strategies/
-│   └── task4_heuristics/
+│   ├── task4_heuristics/
+│   └── task5_concurrency/
 ├── tests/
 │   ├── task1/
 │   ├── task2/
 │   ├── task3/
-│   └── task4/
+│   ├── task4/
+│   └── task5/
 ├── experiments/
 │   ├── benchmark_scripts/
 │   ├── benchmark_data/
 │   └── figures/
-└── task5_concurrency/
-    ├── src/
-    ├── test/
-    ├── run_tests.ps1
-    └── run_benchmark.ps1
+└── pyproject.toml
 ```
 
 ## Generated Benchmark Data and Figures

@@ -14,12 +14,6 @@ ENV/
 build/
 dist/
 *.egg-info/
-*.class
-task5_concurrency/bin/
-task5_concurrency/build/
-task5_concurrency/out/
-task5_concurrency/target/
-.gradle/
 output/
 tmp/
 .idea/
