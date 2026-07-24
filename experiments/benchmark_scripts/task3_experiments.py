@@ -10,7 +10,7 @@ import random
 import sys
 from time import perf_counter_ns
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from task3_strategies import (
@@ -189,7 +189,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "experiments" / "data" / "task3_experiments.csv",
+        default=ROOT / "experiments" / "benchmark_data" / "task3_experiments.csv",
     )
     args = parser.parse_args()
     if args.trials < 1:

@@ -4,7 +4,12 @@ import sys
 import unittest
 
 
-SCRIPT = Path(__file__).resolve().parents[2] / "experiments" / "task1_benchmark.py"
+SCRIPT = (
+    Path(__file__).resolve().parents[2]
+    / "experiments"
+    / "benchmark_scripts"
+    / "task1_benchmark.py"
+)
 SPEC = importlib.util.spec_from_file_location("task1_benchmark", SCRIPT)
 benchmark = importlib.util.module_from_spec(SPEC)
 assert SPEC.loader is not None

@@ -8,7 +8,7 @@ from pathlib import Path
 import statistics
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from task4_heuristics import best_fit_decreasing, local_search
@@ -16,7 +16,7 @@ from task4_heuristics.bin_packing import bin_loads
 from task4_experiments import CAPACITY, generate_items
 
 
-DATA = ROOT / "experiments" / "data" / "task4_experiments.csv"
+DATA = ROOT / "experiments" / "benchmark_data" / "task4_experiments.csv"
 OUTPUT = ROOT / "experiments" / "figures"
 COLOURS = {"Greedy": "#0072B2", "Local search": "#D55E00", "Exact": "#009E73"}
 

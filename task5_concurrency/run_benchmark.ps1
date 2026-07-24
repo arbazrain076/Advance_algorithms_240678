@@ -1,6 +1,7 @@
 param(
     [int]$Trials = 5,
-    [switch]$Quick
+    [switch]$Quick,
+    [string]$Output = "experiments/benchmark_data/task5_benchmarks.csv"
 )
 
 $ErrorActionPreference = "Stop"
@@ -15,7 +16,7 @@ $arguments = @(
     "-cp", "task5_concurrency/build",
     "coursework.concurrent.Benchmark",
     "--trials", $Trials,
-    "--output", "experiments/data/task5_benchmarks.csv"
+    "--output", $Output
 )
 if ($Quick) {
     $arguments += "--quick"
