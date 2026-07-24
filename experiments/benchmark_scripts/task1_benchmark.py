@@ -1,7 +1,7 @@
 """Reproducible Task 1 wall-clock benchmark.
 
 Run from the repository root:
-    python experiments/task1_benchmark.py
+    python experiments/benchmark_scripts/task1_benchmark.py
 """
 
 from __future__ import annotations
@@ -16,7 +16,7 @@ import sys
 from time import perf_counter_ns
 from typing import Callable, Iterable
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from task1_structures import AVLTree, BinarySearchTree, City, CityHashTable, MinHeap
@@ -252,7 +252,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--output",
         type=Path,
-        default=ROOT / "experiments" / "data" / "task1_benchmarks.csv",
+        default=ROOT / "experiments" / "benchmark_data" / "task1_benchmarks.csv",
     )
     args = parser.parse_args()
     if args.trials < 1:

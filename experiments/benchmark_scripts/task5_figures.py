@@ -7,8 +7,8 @@ from pathlib import Path
 import statistics
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "experiments" / "data" / "task5_benchmarks.csv"
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "experiments" / "benchmark_data" / "task5_benchmarks.csv"
 OUTPUT = ROOT / "experiments" / "figures"
 COLOURS = ["#0072B2", "#D55E00", "#009E73", "#777777"]
 

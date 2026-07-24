@@ -7,7 +7,7 @@ from pathlib import Path
 import statistics
 import sys
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "src"))
 
 from task2_graphs import (
@@ -18,7 +18,7 @@ from task2_graphs import (
 )
 
 
-DATA = ROOT / "experiments" / "data" / "task2_benchmarks.csv"
+DATA = ROOT / "experiments" / "benchmark_data" / "task2_benchmarks.csv"
 OUTPUT = ROOT / "experiments" / "figures"
 COLOURS = {
     "Dijkstra": "#0072B2",

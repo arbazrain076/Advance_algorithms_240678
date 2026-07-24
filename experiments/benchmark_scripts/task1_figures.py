@@ -8,8 +8,8 @@ import statistics
 import math
 
 
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "experiments" / "data" / "task1_benchmarks.csv"
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "experiments" / "benchmark_data" / "task1_benchmarks.csv"
 OUTPUT = ROOT / "experiments" / "figures"
 COLOURS = {
     "BST": "#0072B2",
