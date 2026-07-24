@@ -13,9 +13,11 @@ OUTPUT = ROOT / "experiments" / "figures"
 COLOURS = ["#0072B2", "#D55E00", "#009E73", "#777777"]
 
 
-def load_medians() -> dict[tuple[str, int, int], float]:
+def load_medians(
+    data_path: Path = DATA,
+) -> dict[tuple[str, int, int], float]:
     samples: dict[tuple[str, int, int], list[float]] = {}
-    with DATA.open(encoding="utf-8") as stream:
+    with data_path.open(encoding="utf-8") as stream:
         for row in csv.DictReader(stream):
             key = row["algorithm"], int(row["elements"]), int(row["workers"])
             samples.setdefault(key, []).append(int(row["total_ns"]) / 1_000_000)
